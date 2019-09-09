@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    converters_before_validation (0.1.2)
+    converters_before_validation (0.1.3)
       activerecord (>= 5.0.0, < 7.0.0)
       activesupport (>= 5.0.0, < 7.0.0)
 
@@ -83,7 +83,7 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
-    nio4r (2.4.0)
+    nio4r (2.5.1)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     rack (2.0.7)
@@ -131,7 +131,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
-    zeitwerk (2.1.9)
+    zeitwerk (2.1.10)
 
 PLATFORMS
   ruby
