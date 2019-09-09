@@ -1,6 +1,6 @@
 module ConvertersBeforeValidation
   ActiveSupport.on_load(:active_record) do
-    # Adds private callback before_validation, which apply necessary function
+    # Adds private callback before_validation, which applies necessary function
     # to attributes.
     #
     # Usage:

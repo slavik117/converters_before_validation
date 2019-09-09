@@ -1,6 +1,6 @@
 # ConvertersBeforeValidation
 
-string_converter_before_validation adds before_validation callback, which apply necessary function to attributes.
+string_converter_before_validation adds before_validation callback, which applies necessary function to attributes.
 
 There are some derivatives: 
 
@@ -10,7 +10,7 @@ There are some derivatives:
 
 ## Usage
 
-Let we have model Article with some fields: author_name, contact_email, title, camel_tag.
+Let's suppose we have model Article with following fields: author_name, contact_email, title, camel_tag.
 
 ```ruby
   # app/models/article.rb
@@ -21,7 +21,7 @@ Let we have model Article with some fields: author_name, contact_email, title, c
   end
 ```
 
-Let's take fields' values from some not accurate input:
+We're setting values for these fields sourced from some inaccurate input:
 
 ```
 >> article = Article.new(author_name: '   Boss   ', contact_email: ' Boss@ExAmple.Org', title: ' hello ', camel_tag: 'hello_world')
@@ -43,13 +43,14 @@ Let's take fields' values from some not accurate input:
 
 ```
 
-So, we can want to format values before save it to our base:  
+We might want to sanitize our values before saving it to our database:  
   contact_email = contact_email.squish.downcase  
   author_name = author_name.squish  
   title = title.squish.upcase  
   camel_tag = camel_tag.camelcase
 
-This gem's functions are usefull for it. They add before_validation callbacks to model and do this job for us.
+This gem's functions are presented for doing this: 
+before_validation callbacks added to its model and do the job.
 
 ```ruby
   # app/models/article.rb
